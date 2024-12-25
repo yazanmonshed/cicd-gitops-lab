@@ -6,7 +6,7 @@ pipeline {
         stage('Hello World') {
             steps {
                 echo "hello world"
-		cat /etc/os-release
+		sh 'cat /etc/os-release'
             }
         }
     }
