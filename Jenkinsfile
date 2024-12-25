@@ -6,7 +6,7 @@ pipeline {
         stage('Hello World') {
             steps {
                 echo "hello world"
-		sh 'cat /etc/os-release'
+		sh 'docker build .'
             }
         }
     }
