@@ -6,7 +6,7 @@ pipeline {
         stage('Hello World') {
             steps {
                 echo "hello world"
-		sh 'docker build .'
+		sh 'sudo docker build .'
             }
         }
     }
