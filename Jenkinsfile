@@ -1,10 +1,12 @@
 pipeline {
-    agent any
+    agent {
+        label 'cicd-node'
+    }
     stages {
         stage('Hello World') {
             steps {
-                //example('Yazan')
-		echo "hello world"
+                echo "hello world"
+		cat /etc/os-release
             }
         }
     }
