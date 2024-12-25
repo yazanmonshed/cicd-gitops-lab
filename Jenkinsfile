@@ -1,10 +1,10 @@
-@Library('bedrock-library') _
+//@Library('bedrock-library') _
 pipeline {
     agent any
     stages {
         stage('Hello World') {
             steps {
-                example('Yazan')
+                //example('Yazan')
 		sh './script.sh'
             }
         }
